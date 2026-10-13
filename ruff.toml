@@ -1,0 +1,30 @@
+# Linter del progetto (ruff). Regole mirate a errori reali; lo stile compatto
+# deliberato del codice desktop non viene ridefinito dalla tool.
+target-version = "py310"
+
+[lint]
+select = [
+    "E4", "E7", "E9", # errori pycodestyle reali (confronti, except bare, ...)
+    "F",              # pyflakes: nomi non definiti, import/variabili non usati
+    "I",              # import ordinati e raggruppati
+    "B",              # flake8-bugbear: variabili di ciclo catturate, difetti comuni
+    "SIM",            # semplificazioni sicure e behavior-neutrali
+    "C4",             # letterali/comprensioni al posto di chiamate ridondanti
+    "ISC",            # concatenazioni implicite ambigue
+    "BLE",            # except Exception generico deve essere motivato con noqa
+    "PLW1510",        # subprocess.run deve dichiarare check esplicitamente (invariante ADB)
+    "RUF059",         # variabili destrutturate mai usate
+]
+ignore = [
+    # Stile compatto del progetto: statement multipli sulla stessa riga.
+    "E701", "E702", "E703",
+    # `l` come nome di parametro nelle lambda Tk della revisione PvP.
+    "E741",
+    # `zip` senza strict: la semantica di troncamento pre-3.10 è intenzionale
+    # in più siti (coppie successive, dati OCR esterni); da rivedere sito per sito.
+    "B905",
+    # LABELS usa '...'.split('|') per restare leggibile su una riga.
+    "SIM905",
+    # int() espliciti attorno a valori numpy nel detector: tipizzazione difensiva.
+    "RUF046",
+]

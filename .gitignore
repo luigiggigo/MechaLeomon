@@ -1,0 +1,56 @@
+# Python environments and caches
+.venv/
+.venv-build/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.nox/
+venv/
+env/
+*.py[cod]
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.egg-info/
+
+# Generated Windows builds, releases and diagnostics
+build/
+dist/
+release/
+*.spec
+self-test*.json
+runs/
+*.log
+*.exe
+*.msi
+*.msix
+
+# Local settings and secrets
+AGENTS.md
+.agents/
+.codex/
+.aws/
+skills-lock.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/*.local.json
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Private screenshots and local publication workspaces
+desktop/tests/fixtures/*.png
+.vscode/
+public-export/
+*.pfx
+*.p12
+.ssh/
