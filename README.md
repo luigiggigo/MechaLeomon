@@ -102,5 +102,8 @@ sensibili consulta [SECURITY.md](SECURITY.md).
 
 Progetto indipendente, non affiliato ai titolari di Digimon UP o BlueStacks.
 Nomi, marchi e contenuti di terzi appartengono ai rispettivi titolari.
-Non è stata concessa una licenza open source per questo repository: la visibilità
-pubblica non costituisce una concessione generale di diritti di riuso.
+Il codice e la documentazione originali del progetto sono distribuiti sotto
+[licenza MIT](LICENSE), copyright © 2026 luigiggigo.
+La licenza MIT non si applica a marchi, personaggi, immagini o altri contenuti
+di terzi, inclusi eventuali elementi Digimon presenti negli asset; non concede
+autorizzazioni al loro utilizzo. Le dipendenze mantengono le rispettive licenze.
